@@ -1,0 +1,6 @@
+C:\Users\SPY\Documents\Visual Studio 2015\Projects\Leetcode\1-Two Sum Csharp\1-Two Sum Csharp\bin\Debug\1-Two Sum Csharp.exe.config
+C:\Users\SPY\Documents\Visual Studio 2015\Projects\Leetcode\1-Two Sum Csharp\1-Two Sum Csharp\obj\Debug\1-Two Sum Csharp.csprojResolveAssemblyReference.cache
+C:\Users\SPY\Documents\Visual Studio 2015\Projects\Leetcode\1-Two Sum Csharp\1-Two Sum Csharp\bin\Debug\1-Two Sum Csharp.exe
+C:\Users\SPY\Documents\Visual Studio 2015\Projects\Leetcode\1-Two Sum Csharp\1-Two Sum Csharp\bin\Debug\1-Two Sum Csharp.pdb
+C:\Users\SPY\Documents\Visual Studio 2015\Projects\Leetcode\1-Two Sum Csharp\1-Two Sum Csharp\obj\Debug\1-Two Sum Csharp.exe
+C:\Users\SPY\Documents\Visual Studio 2015\Projects\Leetcode\1-Two Sum Csharp\1-Two Sum Csharp\obj\Debug\1-Two Sum Csharp.pdb
