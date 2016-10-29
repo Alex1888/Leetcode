@@ -1,6 +1,6 @@
-```
+
 class Solution(object):
-    
+
     def characterReplacement(self, s, k):
         """
         :type s: str
@@ -30,4 +30,4 @@ class Solution(object):
                          usedk -= 1
                     start += 1
         return res
-```
+
