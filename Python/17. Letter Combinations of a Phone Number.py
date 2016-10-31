@@ -23,7 +23,7 @@ class Solution(object):
                  '8':['t','u','v'],
                  '9':['w','x','y','z'], 
                  '0':[' ']}
-        
+        #index时digits的索引，递归回溯把所有的可能都打印出来，每次增加一个字母
         def findcomb(string, index, res):
             if index == length:
                 res.append(string)
