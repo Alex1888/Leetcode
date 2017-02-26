@@ -1,0 +1,39 @@
+# [202. Happy Number](https://leetcode.com/problems/happy-number/?tab=Description)
+* 简单的递归，每次把结果记录在set里，退出的条件是等于1或者已经存在这个结果了
+* 注意，每次要先计算，在把sum放在set里
+
+```C++
+class Solution {
+public:
+    bool isHappy(int n) {
+        int res = 0;
+        int num = n;
+        unordered_set<int> results;
+        results.insert(n);
+        while(num != 0){
+            res += pow(num%10, 2);
+            num /= 10;
+        }
+        
+        return happynumber(n, res, results);
+    }
+    
+public:
+	bool happynumber(int n, int res, unordered_set<int>& results) {
+		if (res == 1)
+			return true;
+
+		int sum = 0;
+		while (res != 0) {
+			//cout << "sum=" <<sum << endl;
+			sum += pow(res % 10, 2);
+			res /= 10;
+		}
+
+		if (results.count(sum))
+			return false;
+		results.insert(sum);
+		return happynumber(n, sum, results);
+	}
+};
+```
