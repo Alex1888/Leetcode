@@ -7,4 +7,4 @@ This is for leedcode solution code
 
 
 ## useful post and topics
-* [Summary for Bit manipulation](https://leetcode.com/problems/sum-of-two-integers/#/solutions)
+* [Summary for Bit manipulation](https://discuss.leetcode.com/topic/50315/a-summary-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently)
