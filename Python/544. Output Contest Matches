@@ -1,0 +1,19 @@
+# [544. Output Contest Matches](https://leetcode.com/problems/output-contest-matches/description/)
+* 主要是对python的map不熟悉, 这个解法特别直接,就是按照正常的操作表示出来的
+* map是返回一个list,对list中的每个元素进行fun的操作,这里就是把每个数字变成str,但是在python3中map返回的是iterator,所以要再套一个list才能变成list
+* 可以用range(n>>1), 右移就相当于除以2
+* 最优解 https://leetcode.com/problems/output-contest-matches/solution/
+
+```python
+class Solution:
+    def findContestMatch(self, n):
+        """
+        :type n: int
+        :rtype: str
+        """
+        res = list(map(str, range(1, n+1)))
+        while n > 1:
+            res = ["(" + res[i] + "," + res[n-1-i] + ")" for i in range(int(n/2))]
+            n = int(n/2)
+        return res[0]
+```
