@@ -12,5 +12,5 @@
 .gitignore text
 *.md text
 
-*~/Python/*.md linguist-language=Python
-*~/CPP/*.md linguist-language=C++
+*./Python/*.md linguist-language=Python
+*./CPP/*.md linguist-language=C++
