@@ -11,6 +11,6 @@
 *.gitattributes text
 .gitignore text
 *.md text
-*.css linguist-language=Markdown
-*.py linguist-language=Python
-*.cpp linguist-language=C++
+
+*~/Python/*.md linguist-language=Python
+*~/CPP/*.md linguist-language=C++
