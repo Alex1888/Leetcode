@@ -1,0 +1,47 @@
+# [487. Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/description/)
+* 维护一个[left, right]的window, 里面包含最多k个0,
+* 每次先向右移动,如果0的个数多于k了,则移动left把多余的0剔除掉
+* http://www.cnblogs.com/grandyang/p/6376115.html
+
+```c++
+    int findMaxConsecutiveOnes(vector<int>& nums) {
+        int res  = 0;
+        int left = 0, right  =0 , k = 1, zero = 0;
+        
+        for(right = 0; right < nums.size(); right++){
+            if(nums[right] == 0) zero++;
+            while(zero > k){
+                if(nums[left++] == 0) zero--;
+            }
+            
+            res = max(res, right - left +1);
+        }
+        
+        return res;
+    }
+```
+
+* 对于follow-up: 用一个queue来保存之前出现过的0的位置
+
+```c++
+    int findMaxConsecutiveOnes(vector<int>& nums) {
+        int res =0;
+        int left = 0, zero = 0, k =1;
+        queue<int> q;
+        
+        for(int right =0; right < nums.size(); right++){
+            if(nums[right] == 0) {
+                zero++;   
+                q.push(right);
+            }     
+            while(zero > k){
+                left = q.front()+1; q.pop(); //注意要+1
+                zero--;
+            }
+            
+            res = max(res, right-left+1);
+        }
+        
+        return res;
+    }
+```
